@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
-use Illuminate\Container\Attributes\Log;
+// use Illuminate\Container\Attributes\Log;
+use Illuminate\Support\Facades\Log;
 
 class TelegramBotController extends Controller
 {
@@ -55,7 +56,8 @@ class TelegramBotController extends Controller
                     $this->sendMessage($chatId, "I'm sorry, I didn't understand that. You can ask about door types, frame types, color selections, product details, or delivery time.");
             }
         }
-
+        Log::info('Webhook hit!');
+        Log::info($request->all());
         return response()->json(['status' => 'ok']);
     }
 
