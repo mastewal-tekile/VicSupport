@@ -34,7 +34,7 @@ class TelegramBotController extends Controller
                     $this->sendMessage($chatId, "We offer Single frame, Extension frame, Double frame, and Romaniya frame.");
                     break;
                 case 'color selections':
-                    $this->sendMessage($chatId, "We have a variety of colors: white, brown, blue,yellow,mixed,other and custom colors.");
+                    $this->sendMessage($chatId, "We have a variety of colors: white, brown, blue, yellow, mixed, other and custom colors.");
                     break;
                 case 'product details':
                     $this->sendMessage($chatId, "
