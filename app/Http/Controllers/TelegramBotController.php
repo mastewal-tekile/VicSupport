@@ -31,16 +31,25 @@ class TelegramBotController extends Controller
                     $this->sendMessage($chatId, "We offer wooden, fiberglass, and steel doors.");
                     break;
                 case 'frame types':
-                    $this->sendMessage($chatId, "Available frame types are standard and custom.");
+                    $this->sendMessage($chatId, "We offer Single frame, Extension frame, Double frame, and Romaniya frame.");
                     break;
                 case 'color selections':
-                    $this->sendMessage($chatId, "We have a variety of colors: white, brown, black, and custom colors.");
+                    $this->sendMessage($chatId, "We have a variety of colors: white, brown, blue,yellow,mixed,other and custom colors.");
                     break;
                 case 'product details':
-                    $this->sendMessage($chatId, "Our doors come in various sizes and materials. Please specify for details.");
+                    $this->sendMessage($chatId, "
+                            🚪Imported የምናደርጋቸው እጅግ ዘመናዊ የብረት በሮች ባህሪያቸው የእንጨት የሆኑ ናቸው
+
+                            🔑ከ6-10 የቁልፍ ተወርዋሪ ያላቸው Secured master key ያላቸው ናቸው
+
+                            ⭕️ 2 አመት ሙሉ ዋስትና ጋር በጥራት ሰርተን እናስረክቦታለን:: 
+
+                            🚪ዙሪያቸውን ጎምኒ (Rubber Sill ) የተገጠመላቸው በመሆኑ ድምፅ የማያሳልፉ (Sound proof ) , ነፍሳት እና ተባዮችን በቀላሉ የማያሳልፉ ናቸው ።
+
+                            ");
                     break;
                 case 'delivery time':
-                    $this->sendMessage($chatId, "Delivery typically takes 4-6 weeks.");
+                    $this->sendMessage($chatId, "Delivery typically takes 3-4 weeks.");
                     break;
                 default:
                     $this->sendMessage($chatId, "I'm sorry, I didn't understand that. You can ask about door types, frame types, color selections, product details, or delivery time.");
